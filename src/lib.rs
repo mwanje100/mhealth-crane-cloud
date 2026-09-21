@@ -2,8 +2,8 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize, PartialEq)]
 pub enum TaskPriority {
-    Critical,    // Handled locally immediately
-    NonCritical, // Delayed/Queued during WAN outage
+    Critical,    // Run locally immediately
+    NonCritical, // Queued during WAN outage
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
